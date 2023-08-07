@@ -1,7 +1,7 @@
 #include "Task.h"
 
-Task::Task(const std::string &title, const std::string &description)
-        : title(title), description(description), isCompleted(false) {}
+Task::Task(const std::string& title, const std::string& description, TaskCategory category)
+        : title(title), description(description), category(category), isCompleted(false) {}
 
 void Task::setTitle(const std::string &newTitle) {
     title = newTitle;
@@ -10,7 +10,9 @@ void Task::setTitle(const std::string &newTitle) {
 void Task::setDescription(const std::string &newDescription) {
     description = newDescription;
 }
-
+TaskCategory Task::getCategory() const {
+    return category;
+}
 void Task::setCompleted(bool completed) {
     isCompleted = completed;
 }
