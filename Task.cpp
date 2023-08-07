@@ -1,7 +1,3 @@
-//
-// Created by Александр Терёхин on 07.08.2023.
-//
-
 #include "Task.h"
 
 Task::Task(const std::string &title, const std::string &description)
