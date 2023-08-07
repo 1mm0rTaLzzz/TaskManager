@@ -3,4 +3,4 @@ project(TaskManager)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(TaskManager main.cpp)
+add_executable(TaskManager main.cpp Task.cpp Task.h TaskManager.cpp TaskManager.h)
